@@ -1,0 +1,36 @@
+
+
+entity Address {
+    type String
+    line1 String
+    line2 String
+    country String
+    state  String
+    city String
+    pincode String
+    defaultAdd Boolean
+    landMark String
+    longitude Double
+    latitude Double
+    refTable String
+    refTableId Long
+    companyId Long
+	status String
+	lastModified Instant
+    lastModifiedBy String
+}
+
+
+  // Set pagination options
+paginate * with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service * with serviceClass
+
+filter *
+// Set an angular suffix
+// angularSuffix * with tvg
